@@ -1,6 +1,6 @@
 
 FROM ubuntu:14.04
-MAINTAINER hey@morrisjobke.de
+MAINTAINER executorj@gmail.com
 
 RUN apt-get install -y apache2 apache2-utils
 
