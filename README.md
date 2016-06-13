@@ -5,3 +5,7 @@ You can run this container in following way. You can then access the WebDAV inst
 ```
 docker run -d -e USERNAME=test -e PASSWORD=test -p 8888:80 exprime/webdav
 ```
+For data persistance/access use a volume.
+```
+docker run -d -e USERNAME=test -e PASSWORD=test -p 8888:80 -v some/dir:/var/webdav exprime/webdav
+```
