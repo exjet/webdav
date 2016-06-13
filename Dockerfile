@@ -2,7 +2,7 @@
 FROM ubuntu:16.04
 MAINTAINER executorj@gmail.com
 
-RUN apt-get install -y apache2 apache2-utils
+RUN apt update && apt install -y apache2 apache2-utils && apt clean
 
 RUN a2enmod dav dav_fs
 RUN a2dissite 000-default
