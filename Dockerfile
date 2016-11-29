@@ -1,6 +1,6 @@
 
-FROM ubuntu:16.10
-MAINTAINER g.muzykantov@gmail.com
+FROM ubuntu:16.04
+MAINTAINER executorj@gmail.com
 
 RUN apt update && apt install -y apache2 apache2-utils && apt clean
 
